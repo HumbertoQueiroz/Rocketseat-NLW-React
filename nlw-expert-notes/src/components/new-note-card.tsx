@@ -36,7 +36,7 @@ export function NewNoteCard({onNoteCreated}:NewNoteCardProps){
     setContent('')
     setShouldShowOnboarding(true)
     toast.success('Nota criada com sucesso')
-
+12
   }
 
 
@@ -45,7 +45,7 @@ export function NewNoteCard({onNoteCreated}:NewNoteCardProps){
     //caso não tenha ele retorna uma alterta de erro
     const isSpeechRecognitionAPIAvailable = 'SpeechRecognition' in window || 'webkitSpeechRecognition' in window
     if(!isSpeechRecognitionAPIAvailable){
-      alert('Infelizmente seu navegador não suporta a API de gravação, tente trocar pelo chorme, Edge ou Safari')
+      toast.error('Infelizmente seu navegador não suporta a API de gravação, tente trocar pelo chorme, Edge ou Safari')
       return
     }
 
@@ -106,7 +106,7 @@ export function NewNoteCard({onNoteCreated}:NewNoteCardProps){
 
       <Dialog.Portal>
         <Dialog.Overlay className='inset-0 fixed bg-black/50' />
-        <Dialog.Content className='fixed overflow-hidden bg-slate-700 rounded-md flex flex-col left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 max-w-[640px] w-full h-[60vh] outline-none '>
+        <Dialog.Content className='fixed overflow-hidden inset-0 md:inset-auto bg-slate-700 md:rounded-md flex flex-col md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:max-w-[640px] md:w-full md:h-[60vh] outline-none '>
           <Dialog.Close className=' absolute right-0 top-0 bg-slate-800 p-1.5 text-slate-400 hover:text-slate-100 rounded-md'>
           <X className='size-5' />
           </Dialog.Close>
