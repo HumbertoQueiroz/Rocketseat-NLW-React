@@ -1,5 +1,6 @@
 // O '* as Dialog' importa tudo de dentro do diretorio passado no from e garda dentro de um objeto
 //Biblioteca Radix de componentes sem estilização
+// executar `npm install @radix-ui/react-dialog`
 import * as Dialog from '@radix-ui/react-dialog'
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
