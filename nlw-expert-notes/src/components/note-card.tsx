@@ -24,7 +24,7 @@ export function NoteCard({note, onNoteDelete}: NoteCardProps){
     //Usar o Portal quando quiser mover (teleportar) o conteúdo do Content para o body
     // Overley faz o efeito de todo o resto ficar meio escuro, mas precisa inserir o css `inset-0 fixed bg-black/60`
     <Dialog.Root>
-      <Dialog.Trigger className='rounded-md text-left bg-slate-800 p-5 flex flex-col gap-3 overflow-hidden relative hover:ring-2 hover:ring-slate-600 outline-none focus-visible:ring-2 focus-visible:ring-lime-400'>
+      <Dialog.Trigger className='rounded-md text-left bg-slate-800 p-5 flex flex-col gap-3 overflow-hidden relative hover:ring-2 hover:ring-slate-600 outline-none focus-visible:ring-2 focus-visible:ring-lime-600'>
         <span className='text-sm font-medium text-slate-300'>
           {formatDistanceToNow(note.date, { locale: ptBR, addSuffix: true})}
         </span>
