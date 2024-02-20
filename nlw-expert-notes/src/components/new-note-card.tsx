@@ -18,7 +18,7 @@ export function NewNoteCard({onNoteCreated}:NewNoteCardProps){
     setShouldShowOnboarding(false)
   }
 
-  //Pega os valores tendro do Textarea e quando for vazio'' retorna para tela de selecionar gravar audio ou digitar texto
+  //Pega os valores dentro do Textarea e quando for vazio'' retorna para tela de selecionar gravar audio ou digitar texto
   function handleContentChanged(event:ChangeEvent<HTMLTextAreaElement>){
     setContent(event.target.value)
     
