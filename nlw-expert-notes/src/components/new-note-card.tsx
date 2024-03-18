@@ -154,3 +154,4 @@ export function NewNoteCard({onNoteCreated}:NewNoteCardProps){
     </Dialog.Root>
   )
 }
+
